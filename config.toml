@@ -1,0 +1,10 @@
+baseURL = "https://alanleoni.github.io/"
+title = "Sito web di Alan Leoni"
+theme = "starter"
+rssLimit = 20
+
+[taxonomies]
+   tag = "tags"
+
+
+

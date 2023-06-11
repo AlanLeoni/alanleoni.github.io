@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+
+<div class="cover mt-4">
+    <div class="grid grid--center">
+        <div class="col-30 v-center">
+            <h1 class="text-0 text-left alan">Alan Leoni</h1>
+            <p class="text-left">Benvenuti nel mio sito web personale</p>
+            <p class="text-left">Questo spazio digitale contiene alcuni appunti sparsi riguardanti ambiti di mio interesse: sport, tecnologia e lettura</p>
+            <p class="text-left">Nello specifico sono presenti <b>{{ len (where .Site.RegularPages "Section" "!=" "") }}</b> articoli.</p>
+        </div>
+        <div class="col-30">
+            <img class="img-res2" src="/img-site/cat.png" alt="">
+        </div>
+    </div>
+
+</div>
+{{ partial "footer.html" . }}
+
