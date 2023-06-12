@@ -18,6 +18,7 @@ img{height: auto;}
 a{text-decoration: none;}
 hr{border:none; border-bottom: 1px solid #ddd}
 
+
 nav ul{
   list-style-type: none;
 }
@@ -308,7 +309,7 @@ h1, h2, h3, h4 {font-weight: bold; color: var(--font);}
 .pb-2{padding-bottom: 2rem;}
 .pb-3{padding-bottom: 3rem;}
 .pb-4{padding-bottom: 4rem;}
-
+.line{line-height: 0.9em;}
 
 .icon-small{width: 40px;padding: 8px;}
 .icon-white{filter: invert(1);}
@@ -360,10 +361,9 @@ time{
   -webkit-text-fill-color: transparent;
 }
 
-/* code{
-  background: var(--hover);
+code{
+  border: solid 2px var(--font);
   padding: 5px 10px;
   border-radius: 5px;
-  color: var(--link);
   font-size: 0.8rem;
-} */
+}
