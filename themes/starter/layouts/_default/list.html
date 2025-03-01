@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+
+<div class="grid grid--center">
+  <div class="col-50">
+    <h1>Lista - {{ .Type }}</h1>
+
+    {{ .Content }}
+
+    {{ $paginator := .Paginator 5 }} <!-- Paginazione con 5 articoli per pagina -->
+
+    {{ range $paginator.Pages }}
+      <div class="sep">
+        <h3 class="pb-0 mb-0 pt-2">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          Data: {{ .Date.Format "2006-01-02" }}
+        </time>
+        <!-- Elenco dei tag -->
+        <div class="tag">
+          <ul>
+            {{ range .Params.tags }}
+              <li><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+            {{ end }}
+          </ul>
+        </div>    
+      </div>
+    {{ end }}
+
+    <!-- Controlli della paginazione -->
+    <div class="pagination">
+      {{ if $paginator.HasPrev }}
+        <a class="prev" href="{{ $paginator.Prev.URL }}">« Pagina precedente</a>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+        <a class="page-num {{ if eq . $paginator }} active {{ end }}" href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        <a class="next" href="{{ $paginator.Next.URL }}">Pagina successiva »</a>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
