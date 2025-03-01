@@ -200,6 +200,10 @@ h1, h2, h3, h4 {font-weight: bold; color: var(--font);}
   .text-0{font-size: 4rem}
 }
 
+p, li {
+    text-align: justify;
+}
+
 /* ! Button system */
 .button{font-size: 1.2rem; text-transform: uppercase; font-weight: bold; background: var(--bg); color:var(--font); padding: 14px 25px;display: inline-block;border-radius: 4px}
 .button:hover{background: var(--hover);}
@@ -245,13 +249,6 @@ h1, h2, h3, h4 {font-weight: bold; color: var(--font);}
   background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
 }
 
-
-/* ! Footer */
-
-.footer--write{background: var(--footer);
-  padding-top: 15px; padding-bottom: 5px; 
-  text-align: center; color: var(--font);
-}
 
 
 /* ! Grid System */
@@ -428,29 +425,34 @@ time{
 
 
 
-/* Footer */
 .footer {
-    background-color: var(--footer); /* Sfondo del footer */
-    color: var(--font);  /* Testo principale */
-    text-align: center;
+    background-color: var(--footer); /* Mantiene lo sfondo */
+    color: var(--font); /* Colore del testo */
+    text-align: center; /* Centra il testo all'interno */
     padding: 20px 0;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra il contenuto orizzontalmente */
+    justify-content: center; /* Centra il contenuto verticalmente */
+    width: 100%;
 }
 
-/* Linea divisoria del footer (copre tutta la larghezza) */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .footer-divider {
     border: none;
     border-top: 2px solid var(--hover); /* Colore della linea */
-    margin: 0;  /* Nessun margine aggiuntivo */
     width: 100%; /* Estende la linea su tutto lo schermo */
+    margin: 10px 0; /* Distanza tra la linea e il testo */
 }
 
-/* Footer Content */
-.footer-content {
-    max-width: 1200px;
-    margin: 40px auto 0 auto; /* Aggiunto un margine superiore maggiore */
-    padding: 20px; /* Mantiene il padding uniforme */
-}
+
+
 
 /* pagination per pagina a lista */
 
