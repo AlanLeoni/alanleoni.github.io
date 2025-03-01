@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sito web di Alan Leoni</title>
+    <link>https://alanleoni.github.io/tags/</link>
+    <description>Recent content in Tags on Sito web di Alan Leoni</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Apr 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://alanleoni.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>libri</title>
+      <link>https://alanleoni.github.io/tags/libri/</link>
+      <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://alanleoni.github.io/tags/libri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>https://alanleoni.github.io/tags/tech/</link>
+      <pubDate>Wed, 03 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://alanleoni.github.io/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
