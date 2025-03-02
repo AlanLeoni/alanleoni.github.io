@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Feed rss | Sito web di Alan Leoni</title>
+	<title>Feed RSS | Sito web di Alan Leoni</title>
 
 	
 	<link rel="stylesheet" href="/css/style.css">
@@ -49,7 +49,7 @@
 
 <div class="grid grid--center">
     <div class="col-50 mt-3">
-        <h1 class="text-1 line mb-1">Feed rss</h1>
+        <h1 class="text-1 line mb-1">Feed RSS</h1>
         
 <br>
 
@@ -63,16 +63,37 @@
         <p><p style="text-align: center;">
     <img src="/img/feed.png" alt="feed-rss" style="width: 50%; display: block; margin: 0 auto;">
 </p>
-<p>Un &ldquo;feed&rdquo; web, noto anche come &ldquo;feed RSS&rdquo; o &ldquo;feed Atom&rdquo; a seconda delle specifiche tecniche, è un flusso di dati che viene aggiornato ogni volta che viene aggiunto qualcosa di nuovo alla pagina web che segue. Ad esempio, il feed di un blog conterrà tutti gli articoli appena pubblicati.</p>
-<p>La utilità di questo strumento sta nel fatto che consente a programmi o applicazioni specializzate, chiamate lettori di feed, di controllare automaticamente più siti web per gli aggiornamenti, basandosi sulla lista delle sottoscrizioni ai feed. L&rsquo;utente ottiene tutte le nuove informazioni in un unico punto centralizzato, l&rsquo;applicazione del lettore, anziché controllare manualmente ogni singolo sito web.</p>
-<p>Pensa al lettore di feed come alla tua &ldquo;casella di posta unificata&rdquo; per tutti gli aggiornamenti dai siti web che segui.</p>
-<p>Per sottoscrivere, l&rsquo;utente di solito dovrà copiare il link del feed nel posto appropriato del proprio lettore. La maggior parte delle applicazioni/servizi rende questa operazione semplice. Nota che &ldquo;sottoscrivere&rdquo; è semplicemente una copia-incolla standard di un link. Non condividi informazioni private con il sito web che fornisce il feed.</p>
-<p>Nel caso volessi saperne di più, puoi leggere il seguente articolo <a href="https://rss.com/blog/how-do-rss-feeds-work/">articolo</a>.</p>
-<p>In questa pagina sono elencati i link ai feed rss generati dal mio sito web:</p>
+<p>Viviamo in un&rsquo;epoca dominata dagli algoritmi delle piattaforme centralizzate, che decidono per noi quali contenuti mostrarci, filtrando ciò che vediamo in base a criteri opachi e interessi commerciali. I social media ci spingono verso un consumo passivo e superficiale delle informazioni, riducendo la nostra autonomia e la diversità delle fonti. Ma c’è un’alternativa: <strong>i feed RSS</strong>.</p>
+<h2 id="cosè-un-feed-rss-e-perché-usarlo"><strong>Cos’è un feed RSS e perché usarlo?</strong></h2>
+<p>Un feed web (RSS o Atom) è un semplice flusso di dati che viene aggiornato automaticamente ogni volta che un sito web pubblica un nuovo contenuto. Invece di dipendere dai social media e dai loro algoritmi per scoprire gli aggiornamenti, con un feed RSS sei tu a scegliere direttamente le fonti da seguire, senza interferenze e senza pubblicità invasive.</p>
+<p>I feed RSS vengono letti attraverso applicazioni dedicate, chiamate <strong>aggregatori o lettori di feed</strong>. Questi strumenti raccolgono le novità dai siti a cui sei iscritto e le presentano in un&rsquo;unica interfaccia, come se fosse una casella di posta elettronica personalizzata per i contenuti che ti interessano.</p>
+<h2 id="perché-preferire-i-feed-rss-ai-social-media"><strong>Perché preferire i feed RSS ai social media?</strong></h2>
 <ul>
-<li><a href="/posts/index.xml">Link</a> ai feed di tutti i post del blog</li>
-<li><a href="/index.xml">Link</a> ai feed generali di tutto il sito</li>
+<li><strong>Nessun algoritmo decide per te</strong> → Sei tu a scegliere cosa leggere, senza filtri commerciali o bolle di contenuti preconfezionate.</li>
+<li><strong>Privacy e controllo</strong> → Non c’è bisogno di un account, nessun tracciamento, nessun suggerimento indesiderato. Solo tu e le fonti che scegli.</li>
+<li><strong>No pubblicità, no manipolazione</strong> → I feed RSS ti permettono di accedere direttamente alle informazioni senza essere bombardato da pubblicità mirate o clickbait.</li>
+<li><strong>Minimalismo e concentrazione</strong> → Leggere le notizie senza distrazioni, senza notifiche continue e senza il rumore di fondo dei social.</li>
 </ul>
+<p>L’uso degli RSS è parte di una visione più ampia di <strong>tecnologie conviviali</strong>, strumenti che ci permettono di riappropriarci della nostra esperienza digitale senza diventare semplici consumatori passivi. Questo sito web, come spiegato nella pagina <a href="/avviso-ai-naviganti">Avviso ai naviganti</a>, è stato costruito con Hugo proprio per mantenere un approccio <strong>semplice, indipendente e libero</strong>, senza bisogno di piattaforme centralizzate.</p>
+<h2 id="come-iscriversi-ai-feed-rss"><strong>Come iscriversi ai feed RSS?</strong></h2>
+<p>Iscriversi a un feed RSS è semplice: basta copiare l’URL del feed e incollarlo nel proprio lettore di feed preferito. Alcuni software consigliati:</p>
+<ul>
+<li><strong><a href="https://quiterss.org/">QuiteRSS</a></strong> – Software open source per desktop.</li>
+<li><strong><a href="https://flathub.org/apps/details/io.gitlab.news_flash.NewsFlash">NewsFlash</a></strong> – Alternativa moderna per Linux.</li>
+<li><strong><a href="https://freshrss.org/">FreshRSS</a></strong> – Self-hosted, per chi vuole totale controllo.</li>
+<li><strong><a href="https://feedly.com/">Feedly</a></strong> – Servizio online (con limitazioni nella versione gratuita).</li>
+</ul>
+<h3 id="il-mio-setup-elfeed-su-emacs"><strong>Il mio setup: Elfeed su Emacs</strong></h3>
+<p>Personalmente, utilizzo <strong><a href="https://github.com/skeeto/elfeed">Elfeed</a></strong> come client RSS all’interno di <strong>Emacs</strong>. È estremamente flessibile, permette di filtrare e organizzare i feed con la potenza di Emacs Lisp e si integra perfettamente nel mio workflow. Certo, è una soluzione consigliata soprattutto a chi già usa Emacs… ma potrebbe anche essere una buona scusa per iniziare a esplorarlo! 😉</p>
+<p>Se vuoi un&rsquo;alternativa minimalista e potente, Elfeed è una scelta eccellente.</p>
+<h2 id="i-feed-rss-del-mio-sito-web"><strong>I feed RSS del mio sito web</strong></h2>
+<p>Se vuoi ricevere gli aggiornamenti del mio sito senza passare da piattaforme centralizzate, puoi iscriverti ai miei feed RSS:</p>
+<ul>
+<li><strong><a href="/posts/index.xml">Tutti i post del blog</a></strong></li>
+<li><strong><a href="/index.xml">Feed generale di tutto il sito</a></strong></li>
+</ul>
+<hr>
+<p>In un’epoca in cui le piattaforme vogliono trasformarci in consumatori passivi, strumenti come i feed RSS ci aiutano a riprendere il controllo delle informazioni. Per questo motivo li uso e li incoraggio: sono una tecnologia semplice, efficace e soprattutto <strong>libera</strong>.</p>
 </p>
     </div>
 </div>
